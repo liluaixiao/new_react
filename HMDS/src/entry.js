@@ -26,6 +26,7 @@ import SearchResult from './page/search/SearchResult';
 import SearchDetail from './page/search/SearchDetail';
 import CitySelect from './page/common/CitySelect';
 
+import NewsSwiper from './page/common/NewsSwiper';
 
 //临时禁止提示
 console.ignoredYellowBox = ['Warning: BackAndroid'];
@@ -54,8 +55,9 @@ const HMDS = StackNavigator({
 	SearchDetail: {screen: SearchDetail},
 	Discover: {screen: Discover},
 	// CitySelect: {screen: CitySelect},
+	NewsSwiper: {screen: NewsSwiper}
 }, {
-	initialRouteName: 'Main',
+	initialRouteName: 'NewsSwiper',
 	headerMode: 'none'
 });
 
