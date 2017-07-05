@@ -1,0 +1,7 @@
+1、启动RN模块：autopaiwz://rn/open?bundle=bundle1&feature=xx
+    bundle：模调后台中的RN模块英文名
+    feature：开发中的入口模块名字，即用AppRegistry.registerComponent注册的名字
+
+autopaiwz://rn/open?bundle=HMDS&feature=HMDS&p={"type":"detail","id":1}
+
+autopaiwz://rn/open?bundle=test&feature=HMDS&p={"type":"detail","id":1}

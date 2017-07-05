@@ -1,0 +1,29 @@
+{
+	"name": "HMDS",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest",
+        "bundle-android": "react-native bundle --entry-file ./index.android.js --bundle-output ./bundle/android/index.android.bundle --platform android --assets-dest ./bundle/android/ --dev false",
+        "bundle-ios": "react-native bundle --entry-file ./index.ios.js --bundle-output ./bundle/ios/index.ios.bundle --platform ios --assets-dest ./bundle/ios/ --dev false",
+        "bundle": "npm run bundle-ios && npm run bundle-android",
+		"emulator": "emulator.exe -avd Nexus"
+	},
+	"dependencies": {
+		"react": "16.0.0-alpha.6",
+		"react-native": "0.44.0",
+        "react-native-datepicker": "^1.4.7",
+        "react-native-swiper": "^1.5.4",
+        "react-navigation": "git+https://github.com/react-community/react-navigation.git"
+	},
+	"devDependencies": {
+		"babel-jest": "20.0.0",
+		"babel-preset-react-native": "1.9.1",
+		"jest": "20.0.0",
+		"react-test-renderer": "16.0.0-alpha.6"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
